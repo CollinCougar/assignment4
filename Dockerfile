@@ -1,7 +1,7 @@
 FROM fedora:latest
 
-RUN yum install -y tuxpaint vim httpd
-COPY ./my-info.html /var/www/html/my-info.html
+RUN yum install -y httpd
+VOLUME /var/www/html/data
 
 EXPOSE 80
 
